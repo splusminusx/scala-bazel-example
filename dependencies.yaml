@@ -1,0 +1,11 @@
+options:
+  buildHeader: [ "load(\"@io_bazel_rules_scala//scala:scala_import.bzl\", \"scala_import\")" ]
+  languages: [ "scala:2.12.11" ]
+  resolverType: "coursier"
+
+dependencies:
+  org.typelevel:
+    cats:
+      lang: scala
+      modules: [ "core", "effect", "kernel", "macros" ]
+      version: "2.1.1" 
